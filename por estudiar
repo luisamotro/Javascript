@@ -1,0 +1,31 @@
+//EJERCICIO A ESTUDIAR, de como mostrar los datos
+
+        var persona = []
+        var edad = parseInt(prompt("ingresa tu edad"));
+
+        persona.push(edad)
+
+        if(edad < 18){
+            alert("Es un sitio para +18, no puedes registrarte")
+        } else {
+
+        var nombre = (prompt("ingresa tu nombre"));
+        persona.push(nombre)
+
+        var apellido = (prompt("ingresa tu apellido"));
+        persona.push(apellido)
+
+        var direccion = (prompt("ingresa tu direccon"));
+        persona.push(direccion)
+
+        var correo = (prompt("ingresa tu correo"));
+        persona.push(correo)
+
+        var telefono = parseInt(prompt("ingresa tu numero de telefono"));
+        persona.push(telefono)
+
+            alert("Te registraste exitosamente")
+            console.log(persona)
+            alert(persona)
+            document.write("el nombre es: " + persona[1])
+        }

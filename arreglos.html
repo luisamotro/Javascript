@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>arreglos</title>
+</head>
+<body>
+    <script>
+        /*arreglos*/
+        //conjunto de datos,ordenados segun su ingreso, separados por coma
+        //TODOS los arreglos comienzan en la posicion cero (0)
+        //arreglo = tamaño predefinido, no puede cambiar
+        //lista = tamaño dinamico
+        //length= largo o cantidad de elementos 
+
+        var vocales = ["a","i","u","o","e"]
+        console.log(vocales);
+        console.log(vocales[0],vocales[1]);
+        console.log(vocales[2],vocales[3]);
+        console.log(vocales[4],vocales[5]);
+        //
+        vocales[1] = "y";
+        console.log(vocales);
+
+        //push = agrega un dato al final
+        vocales.push("i");
+        console.log(vocales);
+
+        //pop = elimina el ultimo dato
+        vocales.pop();
+        console.log(vocales);
+
+        var arreglo1= []//arreglo vacio
+        //el tamaño es 0, nulo
+        console.log(arreglo1.length);
+        arreglo1.push(1);
+        arreglo1.push(8);
+        var ultimo = arreglo1.pop();
+        console.log(ultimo);
+
+
+        /*
+        vocales = "aeiouAEIOU";
+        console.log(vocales);
+        console.log("string aeiou", vocales[3]);
+        */
+        
+
+
+
+    </script>
+
+</body>
+</html>

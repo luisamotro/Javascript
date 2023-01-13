@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercisios de practica</title>
+</head>
+<body>
+    <script>
+
+        // Operaciones basicas 
+
+        //suma
+        var num1 = 10
+        var num2 = 10
+        var totalsum = num1 + num2
+        console.log ("la suma de los numero es", totalsum)
+        console.log(totalsum)
+
+        //resta
+        var num1 = 10
+        var num2 = 5
+        var totalrest = num1 - num2
+        console.log ("la resta de los numero es", totalrest)
+        console.log(totalrest)
+
+        //multiplicacion
+        var num1 = 2
+        var num2 = 10
+        var totalmult = num1 * num2
+        console.log ("la multiplicacion de los numero es", totalmult)
+        console.log(totalmult)
+
+        //division
+        var num1 = 10
+        var num2 = 2
+        var totaldivi = num1 / num2
+        console.log ("la divi de los numero es", totaldivi)
+        console.log(totaldivi)
+
+        console.log("____________")
+
+        //Arrays-Arreglos
+
+        //creacion 
+
+        var array = [1,2,3,4] //creacion del array
+        console.log(array)//para que muestre array
+        console.log(array[0])//para que muestre lo que hay en la posicion 0
+        array.push(9)//para que agregue el 9 al final
+        console.log(array)//para que muestre el array con el nuevo numero
+        array.pop()//para que saque al 9
+        console.log(array)//para que lo muestre sin el 9
+
+        //para mostrar el contenido 
+        var array = [1,2,3,4]
+        console.log(array[0],array[1],array[2],array[3])
+        //lo anterior muestra lo que hay en las posiciones
+        console.log("_____________")
+
+        //condicionales
+
+        var edad = prompt("ingresa tu edad",0);
+        if(edad >=18){ //si es veradera se imprime mayor de edad
+         console.log("Es mayor de edad")
+         }else{//si fuese falso se imprime menor de edad
+            if(edad<18){
+                console.log("menor de edad")
+            }
+         }
+         console.log("_____________")
+
+         //mas de dos opciones de respuesta
+         var numero = prompt("ingrese un numero")
+         if(numero > 10 && numero < 20)// && = o
+         {
+            console.log ("el numero esta en el rango solicitado")//si lo cumple se imprime esto
+         }else{
+            console.log ("el numero no esta dentro del rango")//sino lo cumple, esto
+         }
+         console.log("___________")
+         console.clear()
+
+         //bucles
+
+         //For
+
+        var numeros_pares = [2,4,6,8,10] //se crea la variable
+         numeros_pares[0]; //para mostrar la posicion 0
+         console.log(numeros_pares)
+         
+        for (let i = 0; i < numeros_pares.length; i++) {//let se usa solo dentro del for
+         console.log ("la posicion es",i)//si lo anterior es verdadero, se imprime esto, junto con el cambio de i
+         console.log ("el elemento es", numeros_pares[i]) //luego se imprime esto, junto con el elemento final
+         }
+         /*por entender!!!!!!!!!!!!!!
+        var valor = 0;
+         for (let i = 0; i < numeros_pares.length; i++) {//por entender!!!!!!!!!!!!!!
+            valor = numeros_pares[i];
+            console.log("la posicion: "+ i + ", tiene el elemento: "+ element)
+         }
+         console.log("element",valor);
+
+        var suma_pares=0;
+         //variable = variable + algo;
+         for(let i=0; i< numeros_pares.length;i++){
+            suma_pares = suma_pares + numeros_pares[i];// es una variables acumuladoras, variable = variable + algo;
+        */
+       console.log("___________")
+
+       //funciones
+       //por revisar!!!!!!!!
+
+       function imprimir(cantidad){//se le asigna el 3 a cantidad
+            console.log("parametro", cantidad);
+        }
+        
+        imprimir([1,2,3,4]);
+       
+
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //Funciones
+        //Una funcion es una parte del codigo que solo se ejecuta cuando sea  llamado
+        //realiza una funcion especifica
+
+        function nombre_funcion ()
+        {
+            //accion o codigo a ejecutar
+        }//mientras no se llame ala funcion, no se ejecuta
+        
+        //llamado a la funcion
+        nombre_funcion();
+       
+
+        function ejemplo(){
+            console.log("estoy dentro de la funcion");
+        }
+        ejemplo();//con esto se llamo a la funcion, y recien se ejecuta el conosle.log
+
+        function imprimir(cantidad){//se le asigna el arreglo imprimir
+            console.log("parametro", cantidad);
+        }
+        
+        imprimir([1,2,3,4]);//argumento, le asigna el valor a la funcion
+        //console.log(cantidad);
+
+
+
+        var numero_impar = 1;// crear variable ocn el valor 1
+        function imprimirImpar(impar){//impar nace y muere ahi, y recibe el valor 1 para trabajr dentro dela funcion
+            console.log("impar",impar);
+            console.log("numero_impar",numero_impar);
+            numero_impar = 3;//sobre escritura, le cambiamos manualemnte el valor1 por necesidad o algo, pero es nuestra decision para cambiar el valor de una variable de afuera
+        }
+        imprimirImpar(numero_impar);//aqui llama al contenidom imprime el contenido de la variable
+        console.log("nuevo numero_impar", numero_impar);
+
+        //Retorno
+
+        //se puede pasar o no un valor al la fucnion
+
+        function sumaNumeros(){
+            console.log(numero_impar + 4);//se puede usar porque esta definidad arriba, console.log(3+4)
+            return numero_impar+4;//la funcion muestra el resultado, este ultim se captura
+        }
+        var numeroRetornado = sumaNumeros();//llamado a la funcion, va a tomar el valor de nuemro_impar y le sumara algo
+        //lo que dice aqui, es basicamente var numero retornado = 7, 
+        console.log("numeroRetornado", numeroRetornado)
+
+        function sumaImpar(){
+            return 3+5//esta devolviendo 8
+        }
+        var impares = sumaImpar();//al llamar la fucnion, se ve el valor retornado
+        console.log(impares)//8
+        console.clear();
+
+
+        function multiplicacion(numero1, numero2) {
+            return numero1*numero2;//retorno del resultado de los dos valores
+        }
+        var resultadoMultiplicacion = multiplicacion(3,2);//llamada la funcion, pasando dos valores 
+        //en la var, lo que hacemos es guardar el retorno
+        console.log("el resultado es",resultadoMultiplicacion);
+        console.clear()
+
+        function crearNuevoArray(numero){
+            var array = [];//su length es 0, primero el agrega el 0
+            for(let i=0 ; i<=numero ; i++){
+               array.push(i);
+            }
+            return array;//cuando termine el for, nos retornara el arreglo listo
+        }
+        var miarray = crearNuevoArray(4);//le damos valores al contenido
+        console.log("array",array)
+
+
+    
+
+
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

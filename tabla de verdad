@@ -1,0 +1,68 @@
+/* Tabla de Verdad
+p= dulce; q= manjar; r= mantequilla
+
+&& and ^ Y 
+2^2 = 4; 2^3= 2*2*2 = 8; 2^4=16
+p ^ q               
+V   V = V
+V   F = F
+F   V = F
+F   F = F
+
+p q r
+V V V= V
+V V F
+V F V
+V F F
+F V V
+F V F
+F F V
+F F F
+
+v || o             
+p v q
+V v V = V
+V v F = V
+F v V = V
+F v F = F
+
+ser o no ser = V || F = verdadero
+ser = V
+no ser = V -> F
+yo estudioo programacion y leo manga
+p = yo NO estudio programacion
+q = leo manga
+ EN PROGRAMACION NO HAY PUNTO MEDIO
+*/
+
+//EJERCICIO A ESTUDIAR
+var persona = []
+
+        var edad = parseInt(prompt("ingresa tu edad"));
+
+        persona.push(edad)
+
+        if(edad < 18){
+            alert("Es un sitio para +18, no puedes registrarte")
+        } else {
+
+        var nombre = (prompt("ingresa tu nombre"));
+        persona.push(nombre)
+
+        var apellido = (prompt("ingresa tu apellido"));
+        persona.push(apellido)
+
+        var direccion = (prompt("ingresa tu direccon"));
+        persona.push(direccion)
+
+        var correo = (prompt("ingresa tu correo"));
+        persona.push(correo)
+
+        var telefono = parseInt(prompt("ingresa tu numero de telefono"));
+        persona.push(telefono)
+
+            alert("Te registraste exitosamente")
+            console.log(persona)
+            alert(persona)
+            document.write("el nombre es: " + persona[1])
+        }

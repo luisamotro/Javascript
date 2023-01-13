@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        //condicionales
+        //misma escencia en todos los lenguajes
+
+
+        /* la sentencia if
+          validar o comprobar algo, para tomar alguna decision
+          *si la condicion es verdadera(true) ingresara al if {}
+          condicion == true
+          Estructura = if(condicion)  { 
+            //lo que es verdadero ingresa aqui
+          }
+        */
+    var edad = prompt("ingresa tu edad",0);
+    if(edad>=18){ //true, entra - false, no entra
+        console.log("Es mayor de edad")
+    }
+    if(edad >= 18){//con esto tambien se puede determinar si es o no mayor de edad
+     console.log ("es menor de edad")
+    }
+    console.clear()
+    //else
+    if(edad>=18){
+        console.log("Es mayor de edad")
+    }else{
+        console.log ("es menor de edad")
+    }
+    console.log("********")
+    //alternativa
+    if(edad<18){
+        console.log("Es menor de edad")
+    }else{
+        console.log ("es mayor de edad")
+    }
+
+
+    //cuando tenemos mas de 2 opciones de respuesa
+    /*validar si numero es mayor a 10 y menor a 20*/
+    var numero=parseInt(prompt("ingresa un numero",0));
+    //conectores &&(y) es inclusivo, ambas cosas, || (o) una u otra opcion
+    //numero < 10; numero > 10; nuemro < 20; numero >20
+    //numero = 10; numero = 20
+
+
+    if(numero > 10 && numero < 20)
+
+    {
+        console.log ("el numero esta en el rango solicitado")
+
+    }else{
+        console.log ("el numero no esta dentro del rango")
+    }
+    //validar si un numero es mayor o menor o igual a cero
+    var numeroAvalidar = parseInt(prompt("ingresa un nuevo numero"))
+     
+    if (numeroAvalidar = 0){
+        console.log ("el numero es igual a cero")
+    }else if(numeroAvalidar > 0){
+        console.log ("el numero es mayor a cero")
+     }else{
+        console.log("el numero es negativo")
+    }
+
+    console.clear()
+//Ejercicio hecho en clase
+
+var persona = []
+
+var edad = parseInt(prompt("ingresa tu edad"));
+if (isNaN(edad)){
+    alert("esto no es un numero")
+}else{ 
+    persona.push(edad)
+}
+
+if(edad < 18){
+    alert("Es un sitio para +18, no puedes registrarte")
+} else {
+
+var nombre = (prompt("ingresa tu nombre"));
+persona.push(nombre)
+
+var apellido = (prompt("ingresa tu apellido"));
+persona.push(apellido)
+
+var direccion = (prompt("ingresa tu direccon"));
+persona.push(direccion)
+
+var correo = (prompt("ingresa tu correo"));
+persona.push(correo)
+
+var telefono = parseInt(prompt("ingresa tu numero de telefono"));
+persona.push(telefono)
+
+    alert("Te registraste exitosamente")
+    console.log(persona)
+    alert(persona)
+    document.write("")
+    document.write("el nombre es: " + persona[1])
+    document.write("")
+    document.write
+    document.write
+    document.write
+    document.write
+}
+  
+    </script>
+</body>
+</html>
